@@ -28,13 +28,13 @@ def main():
         opts, args = getopt.getopt(
             sys.argv[1:], '', ['ra=', 'dec=', 'rate=', 'port='])
     except getopt.error as msg:
-        print msg
+        print(msg)
         return
     if len(opts) < 4:
-        print "Script usage:", __doc__
-        print
-        print "You entered:", opts
-        print "Command argument list:", sys.argv
+        print("Script usage:", __doc__)
+        print()
+        print("You entered:", opts)
+        print("Command argument list:", sys.argv)
         return
 
     for opt, arg in opts:
@@ -46,7 +46,7 @@ def main():
             slewRate = arg
         elif opt == '--port':
             portName = arg
-    print "\nStarting..."
+    print("\nStarting...")
     # port = LXSerial(debug=True) ## to test without a scope connected
     port = LXSerial(debug=False)  # an LX200 must be on and connected!
     port.connect(portName)

@@ -14,7 +14,7 @@
 
 import time
 import LX200
-from LX200Utils import *
+from .LX200Utils import *
 # from LX200.LXSerial import LXSerial
 from LX200.LX200Error import LX200Error
 
@@ -37,10 +37,10 @@ class Telescope:
         """Constructor.
         """
         try:
-            import ConfigParser
+            import configparser
         except BaseException:
-            print 'the ConfigParser module is needed for storing setup info.'
-            print 'do not use the setup* methods'
+            print('the ConfigParser module is needed for storing setup info.')
+            print('do not use the setup* methods')
         if model in SUPPORTED_MODELS:
             self.model = model
         else:
@@ -64,7 +64,7 @@ class Telescope:
         No dialog, just read config...
         """
         # start the Configparser module
-        self.config = ConfigParser.ConfigParser()
+        self.config = configparser.ConfigParser()
         self.config.read(fileName)
 
     # -------------------------------------------------------------------------------
@@ -625,8 +625,8 @@ class Telescope:
         mins = int(angle * 60)
         long = '%03d%c%02d' % (deg, DEG, mins)
 
-        if not CommandBool('Sg', long):
-            raise LX200Error("Invalid longitude: %s" % long)
+        if not CommandBool('Sg', int):
+            raise LX200Error("Invalid longitude: %s" % int)
         else:
             return True
 
@@ -701,7 +701,7 @@ class Telescope:
         dms = to_lx200_angle(angle)
         pair = dms.split(' ')
         if not CommandBool('St', pair[0]):
-            raise LX200Error("Invalid latitude: %s" % long)
+            raise LX200Error("Invalid latitude: %s" % int)
         else:
             return True
 

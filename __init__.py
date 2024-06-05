@@ -12,16 +12,16 @@
 #
 # -----------------------------------------------------------------------------
 
-from __version__ import version
-from Focuser import Focuser
-from Derotator import Derotator
-from Reticule import Reticule
-from LX200Error import LX200Error
-from LX200Utils import *
-from LXGPS import LXGPS
-from LXSerial import LXSerial
-from Library import Library
-from Telescope import Telescope
+from .__version__ import version
+from .Focuser import Focuser
+from .Derotator import Derotator
+from .Reticule import Reticule
+from .LX200Error import LX200Error
+from .LX200Utils import *
+from .LXGPS import LXGPS
+from .LXSerial import LXSerial
+from .Library import Library
+from .Telescope import Telescope
 from sys import argv
 help_comment = """
 Meade Telescope Serial Command Protocol
@@ -130,7 +130,7 @@ def main(argv):
     try:
         port.connect('COM1')
     except BaseException:
-        print 'COM1 connect failed'
+        print('COM1 connect failed')
         return
     scope = Telescope(port, argv[1], debug=False)
     scope.set_site(1)
@@ -139,20 +139,20 @@ def main(argv):
     if scope.model == 'LX200GPS':
         scope.auto_align()
     else:
-        raw_input("do your alignment, then press enter ")
+        input("do your alignment, then press enter ")
 
     scope.set_pointing_mode('HIGH PRECISION')
     library = Library(port, scope)
     library.set_M_object(101)
     # fine adjust
-    raw_input("center the object, then press enter ")
+    input("center the object, then press enter ")
     library.sync_object()
 
 
 if __name__ == '__main__':
     try:
         if argv[1] in ('-h', '-help'):
-            print help_comment
+            print(help_comment)
     except BaseException:
         pass
     main(argv)

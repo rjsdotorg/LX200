@@ -54,14 +54,14 @@ class LXSerial:
             self.connectedPort.write('#:%s%s#' % (cmd, str(arg)))
         except IOError as xxx_todo_changeme:
             (errno, strerror) = xxx_todo_changeme.args
-            print "I/O error(%s): %s" % (errno, strerror)
+            print("I/O error(%s): %s" % (errno, strerror))
         except ValueError:
-            print "bad arg value", arg
+            print("bad arg value", arg)
         except BaseException:
-            print "Unexpected error:", sys.exc_info()[0]
+            print("Unexpected error:", sys.exc_info()[0])
             raise
         else:
-            print "CommandBlind", cmd, args, "succeeded"
+            print("CommandBlind", cmd, args, "succeeded")
             return True
 
     def read_to_hash(self):
@@ -74,7 +74,7 @@ class LXSerial:
                 resp += self.connectedPort.read(1)
         except IndexError as xxx_todo_changeme1:
             (errno, strerror) = xxx_todo_changeme1.args
-            print "IndexError error(%s): %s" % (errno, strerror)
+            print("IndexError error(%s): %s" % (errno, strerror))
 
         return resp[:-1]
 
@@ -101,9 +101,9 @@ class LXSerial:
         - port can be int: [0,...], or alpha: "COMn"
         - ptimeout>240 recommended for LX200GPS using auto_align"""
         if self.debug:
-            import StringIO
+            import io
             # something with read/write
-            self.connectedPort = StringIO.StringIO(':A#')
+            self.connectedPort = io.StringIO(':A#')
         else:
             if self.model == 'LX200GPS':
                 ptimeout = 240  # rqrd for auto_align
@@ -126,7 +126,7 @@ class LXSerial:
                     dsrdtr=None,  # None: use rtscts setting, dsrdtr override if true or false
                 )
             except serial.SerialException as s:
-                print 'serial execption:', s
+                print('serial execption:', s)
                 raise LX200Error(str(s))
 
         # Query of alignment mounting mode.
@@ -136,14 +136,14 @@ class LXSerial:
         except BaseException:
             raise LX200Error("port write error:  %s" % (sys.exc_info()[0]))
         if self.debug:
-            print "connectedPort:", self.connectedPort, "(debug)"
+            print("connectedPort:", self.connectedPort, "(debug)")
             self.connectedPort.seek(0)
         mode = self.connectedPort.read(1)
         if self.debug:
-            print 'mode:', mode
+            print('mode:', mode)
         if mode not in ['A', 'L', 'P', chr(0x06)]:
-            print 'mode error:', mode
-            raise LX200Error, "Port " + str(self.connectedPort) + " doesn't appear to be connected to an LX200 port; read returned \"" + mode + "\""
+            print('mode error:', mode)
+            raise LX200Error("Port " + str(self.connectedPort) + " doesn't appear to be connected to an LX200 port; read returned \"" + mode + "\"")
             self.connectedPort.close()
             return False
 
@@ -159,7 +159,7 @@ class LXSerial:
         portList = []
         for portNum in range(4):
             try:
-                print 'trying', portNum
+                print('trying', portNum)
                 self.connect(portNum)
                 portList.append(portNum)
                 self.connectedPort.close()
@@ -200,7 +200,7 @@ class LXSerial:
         blist = []
         for b in [4800, 9600, 19200, 38400, 57600, 115200]:
             try:
-                print 'trying', b
+                print('trying', b)
                 thisPort = self.connect(portNum, baud=b, ptimeout=2)
                 if thisPort:
                     blist.append(b)
