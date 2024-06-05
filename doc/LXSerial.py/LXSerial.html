@@ -1,0 +1,488 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+          "http://www.w3.org/TR/html40/loose.dtd">
+
+<html>
+         
+  <head>
+    <title>HappyDoc Generated Documentation</title>
+  </head>
+
+  <body bgcolor="#ffffff">
+        
+        
+        <table border="0" cellpadding="5" cellspacing="0" width="100%">
+        <tr>
+            <th rowspan="2"
+                valign="top"
+                align="left"
+                width="10%"
+                bgcolor="#88bbee"><font color="#000000">HappyDoc Generated Documentation</font>
+            </th>
+            <th bgcolor="#88bbee"
+                width="90%"
+                align="right"><font color="#000000">Class: LXSerial</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <!-- breadcrumbs -->
+<p><small>
+/&nbsp;<a href="../../lx200\index.html">lx200</a>&nbsp;/&nbsp;<a href="../LXSerial.html">LXSerial.py</a>&nbsp;/&nbsp;LXSerial&nbsp;</small></p>
+
+<!-- /breadcrumbs -->
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="">Methods</a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="scan_ports"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">scan_ports&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+scan_ports ( self )
+</pre>
+
+<p>check all com ports possible for LX connections</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="test_baud_rates"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">test_baud_rates&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+test_baud_rates ( self,  portNum )
+</pre>
+
+<p>check com port for possible speeds
+        blist<a href="#ref0">[0]</a> will be the fastest</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="connect"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">connect&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+connect (
+        self,
+        port,
+        baud=9600,
+        ptimeout=10,
+        )
+</pre>
+
+<p>Opens the port and checks for a telescope
+        - port can be int: <a href="#ref0,...">[0,...]</a>, or alpha: "COMn"  
+        - ptimeout>240 recommended for LX200GPS using auto_align</p>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="">Exceptions</a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <p>
+LX200Error, "Port " + str( self.connectedPort ) + " doesn't appear to be connected to an LX200 port; read returned \"" + mode + "\""<br>
+LX200Error(str( s ) )<br>
+LX200Error("port write error:  %s" %(sys.exc_info() [ 0 ] ) )<br>
+</p>
+</td></tr>
+</table></td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="CommandString"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">CommandString&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+CommandString (
+        self,
+        cmd,
+        *args,
+        )
+</pre>
+
+<p>issues a command to the telescope, and awaits a string response 
+        terminated by a <code>#</code>. returns string</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="CommandBlind"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">CommandBlind&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+CommandBlind (
+        self,
+        cmd,
+        *args,
+        )
+</pre>
+
+<p>simply packages up command letters in #: # and sends to telescope</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="__repr__"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">__repr__&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+__repr__ ( self )
+</pre>
+
+<p>Return a representation string.</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_baud_rate"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_baud_rate&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_baud_rate ( self,  baud )
+</pre>
+
+<p>Set Baud Rate n, where n is an ASCII digit (1..9) with the following interpertation
+        1 56.7K
+        2 38.4K
+        3 28.8K
+        4 19.2K
+        5 14.4K
+        6 9600
+        7 4800
+        8 2400
+        9 1200
+        Returns:
+        1 At the current baud rate and then changes to the new rate for further communication</p>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="">Exceptions</a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <p>
+LX200Error( "baud " + str( baud ) + " is not one of 56.7, 38.4, 28.8, 19.2, 14.4, 9600, 4800, 2400, 1200" )<br>
+</p>
+</td></tr>
+</table></td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="CommandBool"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">CommandBool&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+CommandBool (
+        self,
+        cmd,
+        *args,
+        )
+</pre>
+
+<p>issues command and checks for <code>0</code> or <code>1</code> response. returns true
+        on success. no hash returned in response.</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="close"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">close&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+close ( self )
+</pre>
+
+<p>close the com port</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="__init__"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">__init__&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+__init__ ( self,  debug=False )
+</pre>
+
+<p>Constructor.
+        Arguments: serial port where the LX200 is connected
+        Note: 
+        two ports can be opened on the LX200
+        - access to the port settings trough Python properties 
+        - port numbering starts at zero, no need to know the platform dependant port
+          name in the user program
+        - port name can be specified if access through numbering is inappropriate   <p>        if self.debug == True, port reads will return the last command chars, 
+        and no scope need be connected</p>
+</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="read_to_hash"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">read_to_hash&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+read_to_hash ( self )
+</pre>
+
+<p>reads from port until hash encountered and returns</p>
+</td></tr>
+</table></td></tr>
+</table>
+        </td>
+        </tr>
+        </table>
+
+    <hr>
+
+    <font size="-2"><i>This document was automatically generated
+    Sun Jul 02 11:19:14 2006 by <a
+    href="http://happydoc.sourceforge.net">HappyDoc</a> version
+    3.0.a1</i></font>
+        
+  </body>
+</html>
+        

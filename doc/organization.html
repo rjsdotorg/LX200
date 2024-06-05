@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+          "http://www.w3.org/TR/html40/loose.dtd">
+
+<html>
+         
+  <head>
+    <title>HappyDoc Generated Documentation</title>
+  </head>
+
+  <body bgcolor="#ffffff">
+        
+        
+        <table border="0" cellpadding="5" cellspacing="0" width="100%">
+        <tr>
+            <th rowspan="2"
+                valign="top"
+                align="left"
+                width="10%"
+                bgcolor="#88bbee"><font color="#000000">HappyDoc Generated Documentation</font>
+            </th>
+            <th bgcolor="#88bbee"
+                width="90%"
+                align="right"><font color="#000000">lx200\organization.txt</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <!-- breadcrumbs -->
+<p><small>
+/&nbsp;<a href="../lx200\index.html">lx200</a>&nbsp;/&nbsp;organization.txt&nbsp;</small></p>
+
+<!-- /breadcrumbs -->
+
+<p>Meade Telescope Serial Command Protocol
+Revision L
+9 October 2002
+Introduction
+The Meade Telescope Serial Control Protocol utilized to 
+remotely command and control Meade Telescopes. This command language contains a 
+core of common commands supported by all telescopess. Due to different 
+implementation and technological advances the command has extensions that are not 
+supported by all models. The differences are noted in the descriptive text for 
+the commands. Finally, there are a series of new commands for the 
+LX200GPS. These commands are in the LXGPS module.</p>
+<p>As an extension to the Telescope Protocol beginning with the LX200GPS, a 
+possible response to any command is ASCII NAK (0x15). Should the telescope 
+control chain be busy and unable to accept an process the command, a NAK will 
+be sent within 10 msec of the receipt of the # terminating the command. In this 
+event, the controller should wait a reasonable interval and retry the command.</p>
+<p>Telescope Command Groupings: ------------------ Supported ------------
+Command Group 
+Command Designator     Symbol   AutoStar LX200<16" LX 16" LX200GPS
+Alignment Query         <ACK>       x         x      x      x
+Alignment<em>              A           x         x      x      x
+Active Backlash         $B          -         -      -      x
+Reticule Control</em>       B           x         p      p      x
+Sync Control            C           p         p      p      x
+Distance Bars           D           x         x      x      x
+Fan<em>                    f           -         -      p      x
+Focus Control Commands  F           p         p      p      x
+GPS Commands            g           -         -      -      x
+Get Information         G           x         x      x      x
+Home Position Commands</em> h           x         -      x      x
+Hour                    H           x         x      x      x
+Initialize Telescope    I           -         -      -      x
+Library                 L           p         p      p      x
+Movement                M           x         p      x      x
+High Precision          P           x         x      x      x
+Smart Drive Control*    $Q          x         x      x      x
+Quit Command            Q           x         x      x      x
+Field De-rotator        r           -         -      p      x
+Rate Control            R           p         p      p      x
+Set Information         S           x         x      x      x
+Tracking Frequency      T           p         p      p      x
+User Format Control     U           p         x      x      x
+Way point (Site)        W           x         x      x      x
+Help Commands           ?           -         x      x      -
+Notes:
+Commands accepted by the telescopes are shown in the table above indicated by an x entry. This means that
+the telescope will accept these commands and respond with a syntactically valid response where required.
+A "p" indicated only a subset of this command class is supported. Due to the differing implementations of
+the telescopes, some of the commands may provide static responses or may do nothing in response to the
+command. See the detailed description of the commands to determine the exact behavior.</p>
+<p>Command line example:</p>
+<p>from LX200 import *
+port = LXSerial(debug=True)
+port.connect("COM1")
+scope = Telescope(port, "LX200", debug=True) #
+scope.set_site(1)
+scope.set_align_mode("P")
+scope.set_slew_rate(<code>FIND</code>)
+if scope.determine_model=="LX200GPS": #optional
+    scope.model = <code>LX200GPS</code>
+    scope.auto_align()
+else:
+    raw_input("do your alignment, then press enter ")</p>
+<p>scope.set_pointing_mode(<code>HIGH PRECISION</code>)
+library = Library(port, scope)
+library.set_M_object(101)
+#fine adjust
+raw_input("center the object, then press enter ")</p>
+<p>library.sync_object()
+# etc...
+comPort.close()</p>
+<p>or, just run
+>python LX200.py  do basic setup in main()</p>
+<p>This code is not safe for multi-threaded serial port operation...
+The author(s) bear no responsibility for equipment, financial, or psychological 
+damages due to use of this code.</p>
+<p>From an email exchage:
+My rule of thumb for choosing between an attribute and a method is
+that attribute access should not create new objects.</p>
+<p>Interesting rule...    In NumPy this is not quite the rule followed.  
+Bascially attributes are used when getting or setting intrinsinc 
+"properties" of the array.  Attributes are used for properties that are 
+important in defining what an array <em>is</em>.   The flags attribute, for 
+example, is an important intrinsinc property of the array but it returns 
+an flags object when it is accessed.   The flat attribute also returns a 
+new object (it is arguable whether it should have been a method or an 
+attribute but it is enough of an intrinsic property --- setting the flat 
+attribute sets elements of the array -- that with historical precedence 
+it was left as an attribute). </p>
+
+        </td>
+        </tr>
+        </table>
+
+    <hr>
+
+    <font size="-2"><i>This document was automatically generated
+    Thu Jun 15 12:11:53 2006 by <a
+    href="http://happydoc.sourceforge.net">HappyDoc</a> version
+    3.0.a1</i></font>
+        
+  </body>
+</html>
+        

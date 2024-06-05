@@ -1,0 +1,6381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+
+          "http://www.w3.org/TR/html40/loose.dtd">
+
+
+
+<html>
+
+         
+
+  <head>
+
+    <title>HappyDoc Generated Documentation</title>
+
+  </head>
+
+
+
+  <body bgcolor="#ffffff">
+
+        
+
+        
+
+        <table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+
+            <th rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="10%"
+
+                bgcolor="#88bbee"><font color="#000000">HappyDoc Generated Documentation</font>
+
+            </th>
+
+            <th bgcolor="#88bbee"
+
+                width="90%"
+
+                align="right"><font color="#000000">Class: Telescope</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <!-- breadcrumbs -->
+
+<p><small>
+
+/&nbsp;<a href="../../lx200\index.html">lx200</a>&nbsp;/&nbsp;<a href="../Telescope.html">Telescope.py</a>&nbsp;/&nbsp;Telescope&nbsp;</small></p>
+
+
+
+<!-- /breadcrumbs -->
+
+
+
+<p>LX200 class for scope movement and properties    
+
+    Note: 
+
+    - two ports can be opened on the LX200 
+
+    - as many scopes as COM ports available can be driven</p>
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="">Methods</a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="help_start"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">help_start&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+help_start ( self )
+
+</pre>
+
+
+
+<p>Set help text cursor to the start of the first line.
+
+        Returns: <string>#
+
+        The <string> contains first string of the general handbox help file.</p>
+
+<p>? - Help Text Retrieval</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_RA"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_RA&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_RA ( self )
+
+</pre>
+
+
+
+<p>Get Telescope RA
+
+        Returns: HH:MM.T#
+
+         or HH:MM:SS#
+
+        Depending which precision is set for the telescope</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_manual_track_rate"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_manual_track_rate&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_manual_track_rate ( self,  rate )
+
+</pre>
+
+
+
+<p>Set Manual rate do the ASCII expressed decimal DDD.DD
+
+        Returns: <code>1</code></p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_site_latitude"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_site_latitude&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_site_latitude ( self,  angle )
+
+</pre>
+
+
+
+<p>Sets the current site latitude to sDD*MM#
+
+        Returns:
+
+        0 - Invalid
+
+        1 - Valid</p>
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="">Exceptions</a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <p>
+
+LX200Error( "Invalid latitude: %s" % long )<br>
+
+</p>
+
+</td></tr>
+
+</table></td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_lunar_latitude"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_lunar_latitude&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_lunar_latitude ( self,  lat )
+
+</pre>
+
+
+
+<p>Sets target object to the specificed selenographic latitude on the Moon.
+
+        Returns 1- If moon is up and coordinates are accepted. sDD*MM
+
+        0 - If the coordinates are invalid</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_lower_limit"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_lower_limit&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_lower_limit ( self )
+
+</pre>
+
+
+
+<p>Get Lower Limit
+
+        Returns: DD*#
+
+            The highest elevation above the horizon that the telescope will be 
+
+            allowed to slew to without a warning message.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="setup_dialog"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">setup_dialog&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+setup_dialog ( self,  fileName='LX200.cfg' )
+
+</pre>
+
+
+
+<p>Mandatory, in advanced mode additional
+
+        parameters, such as the scope position, guide rates etc. will be
+
+        set.
+
+        No dialog, just read config...</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_tracking_rate"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_tracking_rate&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_tracking_rate ( self )
+
+</pre>
+
+
+
+<p>Get tracking rate
+
+        Returns: TT.T#
+
+        Current Track Frequency expressed in hertz assuming a synchonous motor design where a 60.0 Hz motor clock
+
+        would produce 1 revolution of the telescope in 24 hours.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="track_default"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">track_default&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+track_default ( self )
+
+</pre>
+
+
+
+<p>Select default tracking rate
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="AbortSlew_East"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">AbortSlew_East&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+AbortSlew_East ( self )
+
+</pre>
+
+
+
+<p>Halt eastward Slews
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="lunar_sync"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">lunar_sync&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+lunar_sync ( self,  coords=None )
+
+</pre>
+
+
+
+<h4>Synchonize the telescope with the current Selenographic coordinates.</h4>
+
+<p> C - Sync Control</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_distance"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_distance&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_distance ( self )
+
+</pre>
+
+
+
+<p>D - Distance Bars</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="move_North"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">move_North&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+move_North ( self )
+
+</pre>
+
+
+
+<p>Move Telescope North at current slew rate
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="move_South"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">move_South&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+move_South ( self )
+
+</pre>
+
+
+
+<p>Move Telescope South at current slew rate
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_target_DEC"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_target_DEC&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_target_DEC ( self,  angle )
+
+</pre>
+
+
+
+                  <p>Set target object declination to sDD<em>&deg;MM or sDD&deg;</em>MM:SS depending on 
+
+        the current precision setting.
+
+        Accepts float or sDD:MM or sDD:MM:SSReturns:
+
+        1 - Dec Accepted
+
+        0 - Dec invalid</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_site_lat"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_site_lat&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_site_lat ( self )
+
+</pre>
+
+
+
+<p>Get Current Site Latitude
+
+        Returns: sDD*MM#
+
+        The latitude of the current site. Positive inplies North latitude.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="AbortSlew_West"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">AbortSlew_West&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+AbortSlew_West ( self )
+
+</pre>
+
+
+
+<p>Halt westward Slews
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_Dec"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_Dec&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_Dec ( self )
+
+</pre>
+
+
+
+<p>Get Telescope Declination.
+
+        Returns: sDD<em>MM#
+
+        or sDD</em>MM'SS#
+
+        Depending upon the current precision setting for the telescope.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="precision_toggle"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">precision_toggle&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+precision_toggle ( self )
+
+</pre>
+
+
+
+<p>Toggle between low/hi precision positions
+
+        Low - RA displays and messages HH:MM.T sDD<em>MM
+
+        High - Dec/Az/El displays and messages HH:MM:SS sDD</em>MM:SS
+
+        Returns Nothing<p> U - Precision Toggle</p>
+
+</p>
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="">Exceptions</a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <p>
+
+LX200Error( "unsupported model: " + self.model + " for precision_toggle" )<br>
+
+</p>
+
+</td></tr>
+
+</table></td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_slew_centering"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_slew_centering&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_slew_centering ( self )
+
+</pre>
+
+
+
+<p>Set Slew rate to Centering rate (2nd slowest)
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="toggle_time_format"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">toggle_time_format&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+toggle_time_format ( self )
+
+</pre>
+
+
+
+<p>Toggle Between 24 and 12 hour time format
+
+        Returns: Nothing</p>
+
+<p>H - Time Format Command</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_sidereal_time"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_sidereal_time&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_sidereal_time ( self )
+
+</pre>
+
+
+
+<p>Get the Sidereal Time
+
+        Returns: HH:MM:SS#
+
+        The Sidereal Time as an ASCII Sexidecimal value in 24 hour format</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_max_elev"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_max_elev&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_max_elev ( self,  elev )
+
+</pre>
+
+
+
+<p>Set highest elevation to which the telescope will slew - DD
+
+        Returns:
+
+        0 - Invalid
+
+        1 - Valid</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="align_home"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">align_home&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+align_home ( self )
+
+</pre>
+
+
+
+<p>LX200GPS and LX 16" Seeks the Home Position of the scope and sets/aligns
+
+        the scope based on the encoder values stored in non-volatile memory
+
+        Returns: Nothing
+
+        Autostar,LX200 - Igrnored ???</p>
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="">Exceptions</a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <p>
+
+LX200Error( "unsupported model: " + self.model + " for home command" )<br>
+
+</p>
+
+</td></tr>
+
+</table></td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="move_West"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">move_West&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+move_West ( self )
+
+</pre>
+
+
+
+<p>Move Telescope West at current slew rate
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="help_prev"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">help_prev&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+help_prev ( self )
+
+</pre>
+
+
+
+<p>Retreive previous line of the handbox help text file.
+
+        Returns: <string>#
+
+        The <string> contains the next string of general handbox help file</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_align_mode"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_align_mode&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_align_mode ( self,  mode )
+
+</pre>
+
+
+
+<p>Sets method of alignment used
+
+        L Land alignment mode
+
+        P Polar alignment mode
+
+        A AltAz alignment mode
+
+        Returns: nothing</p>
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="">Exceptions</a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <p>
+
+LX200Error( "mode not in ['A','L','P']" )<br>
+
+</p>
+
+</td></tr>
+
+</table></td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_pointing_mode"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_pointing_mode&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_pointing_mode ( self,  mode=None )
+
+</pre>
+
+
+
+<p>set or toggle precision
+
+        in high precision mode -- requires centering</p>
+
+<p>P - High Precision Toggle</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_site_num"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_site_num&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_site_num ( self,  num )
+
+</pre>
+
+
+
+<p>Set current site to <n>, an ASCII digit in the range 0..3
+
+        Returns: Nothing</p>
+
+<p>W - Site Select</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_lunar_longitude"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_lunar_longitude&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_lunar_longitude ( self,  lon )
+
+</pre>
+
+
+
+<p>Sets the target object to the specified selenogrphic longitude on the Moon
+
+        Returns 1 - If the Moon is up and coordinates are accepted. sDDD*MM
+
+        0 - If the coordinates are invalid for any reason.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_site_name"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_site_name&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_site_name (
+
+        self,
+
+        site,
+
+        name,
+
+        )
+
+</pre>
+
+
+
+<p>Set site name to be <string>. LX200s only accept 3 character strings. Other scopes accept up to 15 characters.
+
+        Returns:
+
+        0 - Invalid
+
+        1 - Valid</p>
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="">Exceptions</a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <p>
+
+LX200Error( 'Site name cannot contain "#"' )<br>
+
+LX200Error( "Invalid site name:" + name )<br>
+
+</p>
+
+</td></tr>
+
+</table></td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="determine_model"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">determine_model&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+determine_model ( self,  model="LX200" )
+
+</pre>
+
+
+
+<p>TO DO 
+
+        run a series of commands to test for pass/fail</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_site_longitude"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_site_longitude&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_site_longitude ( self,  angle )
+
+</pre>
+
+
+
+<p>Set current site's longitude to DDD*MM an ASCII position string
+
+        Returns:
+
+        0 - Invalid
+
+        1 - Valid</p>
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="">Exceptions</a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <p>
+
+LX200Error( "Invalid longitude: %s" % long )<br>
+
+</p>
+
+</td></tr>
+
+</table></td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_slew_rate"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_slew_rate&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_slew_rate ( self,  N )
+
+</pre>
+
+
+
+<p>Set maximum slew rate to N degrees per second. N is the range (2..8)
+
+        Returns:
+
+        0 - Invalid
+
+        1 - Valid<p> R - Slew Rate Commands</p>
+
+</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="axis_rates"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">axis_rates&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+axis_rates ( Axis )
+
+</pre>
+
+
+
+<p>Axis (TelescopeAxes) The axis about which rate information is desired 
+
+        Return (Object) Collection of Rate objects describing the supported 
+
+        rates of motion that can be supplied to the MoveAxis() method for the 
+
+        specified axis.         <p> M - Telescope Movement Commands</p>
+
+</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="fan_on"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">fan_on&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+fan_on ( self )
+
+</pre>
+
+
+
+<h4>LX 16"- Turn on the tube exhaust fan</h4>
+
+<p>        LX200GPSTurn on power to accessor panel
+
+        LX200 7" Maksutov - Turn on cooling fan
+
+        Autostar & LX200 < 16" - Not Supported
+
+        Returns: nothing</p>
+
+<p> f - Fan Command</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_menu_entry"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_menu_entry&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_menu_entry ( self,  entry )
+
+</pre>
+
+
+
+<p>Get Alignment Menu Entry 
+
+        Returns: A <code>#</code> Terminated ASCII string. [LX200 legacy command]<p> G - Get Telescope Information</p>
+
+</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_tracking_rate"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_tracking_rate&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_tracking_rate ( self,  rate )
+
+</pre>
+
+
+
+<p>Sets the current tracking rate to TT.T hertz, assuming a model where a 60.0 Hertz synchronous motor will cause the RA
+
+        axis to make exactly one revolution in 24 hours.
+
+        Returns:
+
+        0 - Invalid
+
+        1 - Valid</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="smart_PEC_toggle"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">smart_PEC_toggle&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+smart_PEC_toggle ( self )
+
+</pre>
+
+
+
+<p>Toggles Smart Drive PEC on and off for both axis
+
+        Returns: Nothing
+
+        Not supported on Autostar<p> Q- Smart Drive Control</p>
+
+</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="track_rate_incr"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">track_rate_incr&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+track_rate_incr ( self )
+
+</pre>
+
+
+
+<p>Increment Manual rate by 0.1 Hz
+
+        Returns: Nothing<p> T - Tracking Commands</p>
+
+</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="__repr__"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">__repr__&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+__repr__ ( self )
+
+</pre>
+
+
+
+<p>Return a representation string.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="change_date"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">change_date&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+change_date ( self,  date )
+
+</pre>
+
+
+
+<p>Change Handbox Date to MM/DD/YY
+
+        Returns: <D><string>
+
+        D = <code>0</code> if the date is invalid. The string is the null string.
+
+        D = <code>1</code> for valid dates and the string is "Updating Planetary Data"
+
+             #"
+
+        Note: For LX200GPS this is the UTC data!</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_site_names"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_site_names&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_site_names ( self )
+
+</pre>
+
+
+
+<p>return all names in a List</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="store_home"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">store_home&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+store_home ( self )
+
+</pre>
+
+
+
+<p>LX200GPS and LX 16" Seeks Home Position and stores the encoder values
+
+        from the aligned telescope at the home position in the nonvolatile memory of the
+
+        scope.
+
+        Returns: Nothing
+
+        Autostar,LX200 - Ignored ???<p> h - Home Position Commands</p>
+
+</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="track_rate_dec"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">track_rate_dec&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+track_rate_dec ( self )
+
+</pre>
+
+
+
+<p>Decrement Manual rate by 0.1 Hz
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_local_time_24"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_local_time_24&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_local_time_24 ( self )
+
+</pre>
+
+
+
+<p>Get Local Time in 24 hour format
+
+        Returns: HH:MM:SS#      
+
+        The Local Time in 24-hour Format</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_temperature"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_temperature&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_temperature ( self )
+
+</pre>
+
+
+
+<p>LX200GPS - Return Optical Tube Assembly Temperature
+
+        Returns <sdd.ddd>  - a <code>#</code> terminated signed ASCII real number 
+
+        indicating the Celsius ambient temperature.
+
+        All others - Not supported</p>
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="">Exceptions</a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <p>
+
+LX200Error( "unsupported model: " + self.model + " for Optical Tube Assembly Temperature" )<br>
+
+</p>
+
+</td></tr>
+
+</table></td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_local_time12"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_local_time12&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_local_time12 ( self )
+
+</pre>
+
+
+
+<p>Get Local Telescope Time In 12 Hour Format
+
+        Returns: HH:MM:SS#
+
+        The time in 12 format</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_time_lon"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_time_lon&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_time_lon (
+
+        self,
+
+        time,
+
+        lon,
+
+        )
+
+</pre>
+
+
+
+<p>Since the time setting in seconds is 4x better than the Lon setting
+
+        of minutes, I propose using the combination of Lon and time to minimize 
+
+        error of rounding: ie, if Lon is 117deg15'19" use the time setting to 
+
+        compensate for the 19".</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_high_limit"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_high_limit&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_high_limit ( self )
+
+</pre>
+
+
+
+<p>Get High Limit
+
+        Returns: sDD*
+
+        The minimum elevation of an object above the horizon to which the 
+
+        telescope will slew with reporting a
+
+        "Below Horizon" error.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_slew_find"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_slew_find&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_slew_find ( self )
+
+</pre>
+
+
+
+<p>Set Slew rate to Find Rate (2nd Fastest)
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="AbortSlew"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">AbortSlew&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+AbortSlew ( self,  direction=None )
+
+</pre>
+
+
+
+<p>Halt all current slewing
+
+        Returns:Nothing<p> Q - Movement Commands</p>
+
+</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="move_to_object"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">move_to_object&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+move_to_object ( self )
+
+</pre>
+
+
+
+<p>Slew to Target Object
+
+        Returns:
+
+        0 Slew is Possible
+
+        1<string> Object Below Horizon w/string message
+
+        2<string> Object Below Higher w/string message</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_site3"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_site3&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_site3 ( self )
+
+</pre>
+
+
+
+<p>Get Site 3 Name
+
+        Returns: <string>#
+
+        A <code>#</code> terminated string with the name of the requested site.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_site2"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_site2&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_site2 ( self )
+
+</pre>
+
+
+
+<p>Get Site 2 Name
+
+        Returns: <string>#
+
+        A <code>#</code> terminated string with the name of the requested site.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_site1"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_site1&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_site1 ( self )
+
+</pre>
+
+
+
+<p>Get Site 1 Name
+
+        Returns: <string>#
+
+        A <code>#</code> terminated string with the name of the requested site.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_alignment"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_alignment&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_alignment ( self )
+
+</pre>
+
+
+
+<p>Query of alignment mounting mode.
+
+        Returns:
+
+        A If scope in AltAz Mode
+
+        L If scope in Land Mode
+
+        P If scope in Polar Mode<p> ACK - Alignment Query</p>
+
+</p>
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="">Exceptions</a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <p>
+
+LX200Error("get_alignment - port write error:  %s" %(sys.exc_info() [ 0 ] ) )<br>
+
+</p>
+
+</td></tr>
+
+</table></td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_slew_max"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_slew_max&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_slew_max ( self )
+
+</pre>
+
+
+
+<p>Set Slew rate to max (fastest)
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_site4"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_site4&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_site4 ( self )
+
+</pre>
+
+
+
+<p>Get Site 4 Name
+
+        Returns: <string>#
+
+        A <code>#</code> terminated string with the name of the requested site.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="move_East"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">move_East&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+move_East (
+
+        self,
+
+        rate=None,
+
+        t=None,
+
+        )
+
+</pre>
+
+
+
+<p>Move Telescope East at current slew rate
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_Altitude"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_Altitude&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_Altitude ( self )
+
+</pre>
+
+
+
+<p>Get Telescope Altitude
+
+        Returns: sDD<em>MM#
+
+        or sDD</em>MM'SS#
+
+        The current scope altitude. 
+
+        The returned format depending on the current precision setting.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_current_long"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_current_long&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_current_long ( self )
+
+</pre>
+
+
+
+<p>Get Current Site Longitude
+
+        Returns: sDDD*MM")
+
+        The current site Longitude. East Longitudes are expressed as negative</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_target_AZ"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_target_AZ&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_target_AZ ( self )
+
+</pre>
+
+
+
+<p>Sets the target Object Azimuth [LX 16" and LX200GPS only]
+
+        Returns:
+
+        0 - Invalid
+
+        1 - Valid</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_site"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_site&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_site ( self,  site )
+
+</pre>
+
+
+
+<p>Set current site to <n>, an ASCII digit in the range 0..3
+
+        Returns: Nothing<p> S - Telescope Set Commands</p>
+
+</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_home_status"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_home_status&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_home_status ( self )
+
+</pre>
+
+
+
+<p>Autostar, LX200GPS and LX 16" Query Home Status
+
+        Returns:
+
+        0 Home Search Failed
+
+        1 Home Search Found
+
+        2 Home Search in Progress        
+
+        LX200 Not Supported</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_target_RA"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_target_RA&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_target_RA ( self,  angle )
+
+</pre>
+
+
+
+                  <p>Set target object RA to HH:MM.T or HH:MM:SS depending on the current precision setting.
+
+        Angle is a float
+
+         or sDD:MM.T or sDD:MM:SS. Returns:
+
+        0 - Invalid
+
+        1 - Valid</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="track_custom"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">track_custom&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+track_custom ( self )
+
+</pre>
+
+
+
+<p>Select custom tracking rate
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="auto_align"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">auto_align&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+auto_align ( self )
+
+</pre>
+
+
+
+<p>Start Telescope Automatic Alignment Sequence [LX200GPS only]
+
+        Returns:
+
+        1: When complete (can take several minutes).
+
+        0: If scope not AzEl Mounted or align fails<p> A - Alignment Commands</p>
+
+</p>
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="">Exceptions</a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <p>
+
+LX200Error( "unsupported alignment: " + align_res + " for auto_align" )<br>
+
+LX200Error( "unsupported model: " + self.model + " for auto_align" )<br>
+
+LX200Error( "auto_align failed" )<br>
+
+</p>
+
+</td></tr>
+
+</table></td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_calendar_format"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_calendar_format&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_calendar_format ( self )
+
+</pre>
+
+
+
+<p>Get Calendar Format
+
+        Returns: 12#
+
+         or 24#
+
+        Depending on the current telescope format setting.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="ser_slew_guide"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">ser_slew_guide&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+ser_slew_guide ( self )
+
+</pre>
+
+
+
+<p>Set Slew rate to Guiding Rate (slowest)
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_date"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_date&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_date ( self )
+
+</pre>
+
+
+
+<p>Get current date.
+
+        Returns: MM/DD/YY#
+
+        The current local calendar date for the telescope.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="track_lunar"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">track_lunar&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+track_lunar ( self )
+
+</pre>
+
+
+
+<p>Set Lunar Tracking Rate
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="__init__"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">__init__&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+__init__ (
+
+        self,
+
+        comPort,
+
+        model='LX200',
+
+        debug=False,
+
+        )
+
+</pre>
+
+
+
+<p>Constructor.</p>
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="">Exceptions</a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <p>
+
+LX200Error( "unsupported model: " + model )<br>
+
+</p>
+
+</td></tr>
+
+</table></td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="help_next"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">help_next&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+help_next ( self )
+
+</pre>
+
+
+
+<p>Retrieve the next line of help text
+
+        Returns: <string>#
+
+        The <string> contains the next string of general handbox help file</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="move_to_current_target"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">move_to_current_target&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+move_to_current_target ( self )
+
+</pre>
+
+
+
+<p>Autostar, LX 16", LX200GPS - Slew to target Alt and Az
+
+        Returns:
+
+        0 - No fault
+
+        1 - Fault
+
+        LX200 - Not supported</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_UTC_offset"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_UTC_offset&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_UTC_offset ( self )
+
+</pre>
+
+
+
+<p>Get UTC offset time
+
+        Returns: sHH#
+
+         or sHH.H#
+
+        The number of decimal hours to add to local time to convert it to UTC. 
+
+        If the number is a whole number the  sHH#
+
+         form is returned, otherwise the longer form is return. On Autostar and 
+
+         LX200GPS, the daylight savings setting in effect is factored into 
+
+         returned value.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="toggle_precision"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">toggle_precision&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+toggle_precision ( self )
+
+</pre>
+
+
+
+<p>Toggles High Precsion Pointing. When High precision pointing is 
+
+        enabled scope will first allow the operator to center a
+
+        nearby bright star before moving to the actual taget.
+
+        Returns: <string>
+
+        "HIGH PRECISION" Current setting after this command.
+
+        "LOW PRECISION" Current setting after this command.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="FindHome"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">FindHome&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+FindHome ( self )
+
+</pre>
+
+
+
+<p>Autostar, LX200GPS and LX 16"Slew to Park Position
+
+        Returns: Nothing</p>
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="">Exceptions</a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <p>
+
+LX200Error( "FindHome failed" )<br>
+
+</p>
+
+</td></tr>
+
+</table></td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="AbortSlew_North"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">AbortSlew_North&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+AbortSlew_North ( self )
+
+</pre>
+
+
+
+<p>Halt northward Slews
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_UTC_offset"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_UTC_offset&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_UTC_offset ( self,  hours )
+
+</pre>
+
+
+
+<p>Set the number of hours added to local time to yield UTC "sHH.H"
+
+        Returns:
+
+        0 - Invalid
+
+        1 - Valid</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_site"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_site&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_site ( self,  siteNum )
+
+</pre>
+
+
+
+<p>return site name</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_sideral_time"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_sideral_time&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_sideral_time ( self,  stime )
+
+</pre>
+
+
+
+<p>Sets the local sideral time to HH:MM:SS
+
+        Returns:
+
+        0 - Invalid
+
+        1 - Valid</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_precision_type"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_precision_type&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_precision_type ( self,  pType )
+
+</pre>
+
+
+
+<p>Sets telescope to give various position responses
+
+         No command to check precision, so read something</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_target_alt"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_target_alt&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_target_alt ( self,  alt )
+
+</pre>
+
+
+
+<p>Set target object altitude to sDD<em>MM# or sDD</em>MM'SS"
+
+         [LX 16", Autostar, LX200GPS]
+
+        Returns:
+
+        0 Object within slew range
+
+        1 Object out of slew range</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="fan_off"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">fan_off&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+fan_off ( self )
+
+</pre>
+
+
+
+<p>LX 16"- Turn off tube exhaust fan
+
+        LX200GPS - Turn off power to accessory panel
+
+        LX200 7" Maksutov - Turn off cooling fan
+
+        Autostar & LX200 < 16" - Not Supported
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="get_AZ"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">get_AZ&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+get_AZ ( self )
+
+</pre>
+
+
+
+<p>Get telescope azimuth
+
+        Returns: DDD<em>MM#T or DDD</em>MM'SS#
+
+        The current telescope Azimuth depending on the selected precision.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="AbortSlew_South"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">AbortSlew_South&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+AbortSlew_South ( self )
+
+</pre>
+
+
+
+<p>Halt southward Slews
+
+        Returns: Nothing</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="can_move_axis"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">can_move_axis&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+can_move_axis ( Axis )
+
+</pre>
+
+
+
+<p>Axis (TelescopeAxes) The identifier for the axis to be tested 
+
+        Return (Boolean) True if the telescope can be controlled about the 
+
+        specified axis via the MoveAxis() method.</p>
+
+</td></tr>
+
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+        <tr>
+
+            <th bgcolor="#99ccff"
+
+                rowspan="2"
+
+                valign="top"
+
+                align="left"
+
+                width="20%"
+
+                >
+
+                <font color="#000000">
+
+                  <a name="set_local_time"></a>&nbsp;
+
+                </font>
+
+            </th>
+
+            <th bgcolor="#99ccff"
+
+                valign="top"
+
+                align="left"
+
+                width="80%"
+
+                >
+
+                <font color="#000000">set_local_time&nbsp;</font>
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+        <td>
+
+        <pre>
+
+set_local_time ( self,  ltime )
+
+</pre>
+
+
+
+<p>Set the local Time "HH:MM:SS" 
+
+        Returns:
+
+        0 - Invalid
+
+        1 - Valid</p>
+
+</td></tr>
+
+</table></td></tr>
+
+</table>
+
+        </td>
+
+        </tr>
+
+        </table>
+
+
+
+    <hr>
+
+
+
+    <font size="-2"><i>This document was automatically generated
+
+    Sun Jul 02 11:19:22 2006 by <a
+
+    href="http://happydoc.sourceforge.net">HappyDoc</a> version
+
+    3.0.a1</i></font>
+
+        
+
+  </body>
+
+</html>
+
+        

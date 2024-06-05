@@ -1,0 +1,4 @@
+This zip should be extracted into the /lib/site-packages/ folder of your Python
+installation.
+
+

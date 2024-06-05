@@ -1,0 +1,1304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+          "http://www.w3.org/TR/html40/loose.dtd">
+
+<html>
+         
+  <head>
+    <title>HappyDoc Generated Documentation</title>
+  </head>
+
+  <body bgcolor="#ffffff">
+        
+        
+        <table border="0" cellpadding="5" cellspacing="0" width="100%">
+        <tr>
+            <th rowspan="2"
+                valign="top"
+                align="left"
+                width="10%"
+                bgcolor="#88bbee"><font color="#000000">HappyDoc Generated Documentation</font>
+            </th>
+            <th bgcolor="#88bbee"
+                width="90%"
+                align="right"><font color="#000000">Class: LXGPS</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <!-- breadcrumbs -->
+<p><small>
+/&nbsp;<a href="../../lx200\index.html">lx200</a>&nbsp;/&nbsp;<a href="../LXGPS.html">LXGPS.py</a>&nbsp;/&nbsp;LXGPS&nbsp;</small></p>
+
+<!-- /breadcrumbs -->
+
+<p>LX200 class for GPS and properties 
+    TO DO: implement the NAK wait</p>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="">Methods</a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="GPS_on"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">GPS_on&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+GPS_on ( self )
+</pre>
+
+<p>Turn on GPS power</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="get_GPS_time"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">get_GPS_time&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+get_GPS_time ( self )
+</pre>
+
+<p>Powers up the GPS and updates the system time from the GPS stream. 
+        The process my take several minutes to complete.
+        During GPS update, normal handbox operations are interrupted. [LX200gps only]
+        Returns: <code>0</code> In the event that the user interrupts the process, or the GPS times out.
+        Returns: <code>1</code> After successful updates</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="get_firmware_num"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">get_firmware_num&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+get_firmware_num ( self )
+</pre>
+
+<p>Get Telescope Firmware Number
+        Returns: dd.d#</p>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="">Exceptions</a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <p>
+LX200Error( "unsupported model: " + self.model + " for version" )<br>
+</p>
+</td></tr>
+</table></td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_guide_rate"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_guide_rate&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_guide_rate ( self,  r )
+</pre>
+
+<h4>Programmable Guiding Rates</h4>
+<p> R - Slew Rate Commands</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="enable_DEC_PEC"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">enable_DEC_PEC&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+enable_DEC_PEC ( self )
+</pre>
+
+<p>Dec PEC Enable</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="sleep"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">sleep&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+sleep ( self,  t=None )
+</pre>
+
+<p>LX200GPS only: Sleep Telescope. Power off motors, encoders, displays and lights. Scope
+        remains in minimum power mode until a keystroke is received or a wake command is sent.
+        Takes optional param time in seconds<p> h - Home Position Commands</p>
+</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="get_firmware_time"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">get_firmware_time&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+get_firmware_time ( self )
+</pre>
+
+<p>Get Telescope Firmware Time
+        returns: HH:MM:SS#</p>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="">Exceptions</a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <p>
+LX200Error( "unsupported model: " + self.model + " for version" )<br>
+</p>
+</td></tr>
+</table></td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="__init__"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">__init__&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+__init__ (
+        self,
+        comPort,
+        debug=False,
+        )
+</pre>
+
+<p>Constructor.</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_dec_backlash"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_dec_backlash&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_dec_backlash ( self,  seconds )
+</pre>
+
+<p>Set Altitude/Dec Antibacklash
+        Returns Nothing</p>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="">Exceptions</a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <p>
+LX200Error( "unsupported model: " + self.model + " for active backlash  " )<br>
+</p>
+</td></tr>
+</table></td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="get_product_name"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">get_product_name&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+get_product_name ( self )
+</pre>
+
+<p>Get Telescope Product Name
+        Returns: <string>#</p>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="">Exceptions</a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <p>
+LX200Error( "unsupported model: " + self.model + " for version" )<br>
+</p>
+</td></tr>
+</table></td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="disable_DEC_PEC"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">disable_DEC_PEC&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+disable_DEC_PEC ( self )
+</pre>
+
+<p>disable Dec/Alt PEC [LX200gps only]
+        Returns: Nothing</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="toggle_smart_PEC"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">toggle_smart_PEC&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+toggle_smart_PEC ( self )
+</pre>
+
+<p>Toggles Smart Drive PEC on and off for both axis
+        Returns: Nothing
+        Not supported on Autostar<p> Q- Smart Drive Control</p>
+</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="reticule_duty"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">reticule_duty&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+reticule_duty ( self,  n )
+</pre>
+
+<p>Programmable Reticule Duty Cycle</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="init_scope"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">init_scope&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+init_scope ( self )
+</pre>
+
+<p>Initialize Telescope</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="get_firmware_date"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">get_firmware_date&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+get_firmware_date ( self )
+</pre>
+
+<p>Get Telescope Firmware Date
+        Returns: mmm dd yyyy#</p>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="">Exceptions</a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <p>
+LX200Error( "unsupported model: " + self.model + " for version" )<br>
+</p>
+</td></tr>
+</table></td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="get_GPS_data"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">get_GPS_data&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+get_GPS_data ( self )
+</pre>
+
+<p>LX200GPS Only - Turns on NMEA GPS data stream.
+        Returns: The next string from the GPS in standard NEMA format followed by a <code>#</code> key</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_DEC_backlash"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_DEC_backlash&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_DEC_backlash ( self,  dd )
+</pre>
+
+<p>Set Altitude/Dec Antibacklash</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="update_time"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">update_time&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+update_time ( self )
+</pre>
+
+<p>Updates Time of Day from GPS</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="GPS_off"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">GPS_off&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+GPS_off ( self )
+</pre>
+
+<p>Turn off GPS power</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="version_info"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">version_info&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+version_info ( self )
+</pre>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="">Exceptions</a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <p>
+LX200Error( "unsupported model: " + self.model + " for version" )<br>
+</p>
+</td></tr>
+</table></td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="TO_DO"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">TO_DO&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+TO_DO ( self )
+</pre>
+
+<p>Stream GPS data</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="deisable_DEC_PEC"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">deisable_DEC_PEC&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+deisable_DEC_PEC ( self )
+</pre>
+
+<p>Dec PEC Disable</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="enable_RA_PEC"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">enable_RA_PEC&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+enable_RA_PEC ( self )
+</pre>
+
+<p>RA PEC Enable</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="wake"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">wake&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+wake ( self )
+</pre>
+
+<p>LX200 GPS Only: Wake up sleeping telescope.</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="disable_RA_PEC"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">disable_RA_PEC&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+disable_RA_PEC ( self )
+</pre>
+
+<p>RA PEC Disable</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="restart"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">restart&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+restart ( self )
+</pre>
+
+<p>LX200 GPS Only - Causes the telescope to cease current operations 
+        and restart at its power on initialization.</p>
+<p>I - Initialize Telescope Command</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="GPS"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">GPS&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+GPS (
+        self,
+        state="on",
+        data=None,
+        )
+</pre>
+
+<p>g - GPS/Magnetometer commands</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_ra_backlash"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_ra_backlash&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_ra_backlash ( self,  seconds )
+</pre>
+
+<p>Set Azimuth/RA Antibacklash
+        Returns Nothing</p>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="">Exceptions</a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <p>
+LX200Error( "unsupported model: " + self.model + " for active backlash  " )<br>
+</p>
+</td></tr>
+</table></td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_DEC_slew_rate"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_DEC_slew_rate&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_DEC_slew_rate ( self,  r )
+</pre>
+
+<p>Programmable Slew Rates</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="auto_align"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">auto_align&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+auto_align ( self )
+</pre>
+
+<h4>Automatically align scope</h4>
+<p> Appendix A: LX200GPS Command Extensions</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="version_info_list"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">version_info_list&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+version_info_list ( self )
+</pre>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="__repr__"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">__repr__&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+__repr__ ( self )
+</pre>
+
+<p>Return a representation string.</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_RA_backlash"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_RA_backlash&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_RA_backlash ( self,  dd )
+</pre>
+
+<p>Set Azimuth/RA Antibacklash</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_baud_rate"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_baud_rate&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_baud_rate ( self,  r )
+</pre>
+
+<p>Set Baud Rate</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_RA_slew_rate"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_RA_slew_rate&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_RA_slew_rate ( self,  r )
+</pre>
+
+<p>Programmable Slew Rates</p>
+</td></tr>
+</table></td></tr>
+</table>
+        </td>
+        </tr>
+        </table>
+
+    <hr>
+
+    <font size="-2"><i>This document was automatically generated
+    Sun Jul 02 11:19:15 2006 by <a
+    href="http://happydoc.sourceforge.net">HappyDoc</a> version
+    3.0.a1</i></font>
+        
+  </body>
+</html>
+        

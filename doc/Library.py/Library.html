@@ -1,0 +1,1052 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+          "http://www.w3.org/TR/html40/loose.dtd">
+
+<html>
+         
+  <head>
+    <title>HappyDoc Generated Documentation</title>
+  </head>
+
+  <body bgcolor="#ffffff">
+        
+        
+        <table border="0" cellpadding="5" cellspacing="0" width="100%">
+        <tr>
+            <th rowspan="2"
+                valign="top"
+                align="left"
+                width="10%"
+                bgcolor="#88bbee"><font color="#000000">HappyDoc Generated Documentation</font>
+            </th>
+            <th bgcolor="#88bbee"
+                width="90%"
+                align="right"><font color="#000000">Class: Library</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <!-- breadcrumbs -->
+<p><small>
+/&nbsp;<a href="../../lx200\index.html">lx200</a>&nbsp;/&nbsp;<a href="../Library.html">Library.py</a>&nbsp;/&nbsp;Library&nbsp;</small></p>
+
+<!-- /breadcrumbs -->
+
+<p>Class for the LX200 built-in object library</p>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="">Methods</a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_faint_limit"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_faint_limit&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_faint_limit ( self,  lim )
+</pre>
+
+<p>Set faint magnitude limit to sMM.M
+        Returns:
+        0 - Invalid
+        1 - Valid</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="identify"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">identify&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+identify ( self )
+</pre>
+
+<p>Identify object in current field.
+        Returns: <string>")
+        Where the string contains the number of objects in field & object in center field.
+        LX200GPS & Autostar - Performs no function. 
+        Returns static string "0 - Objects found".</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="__init__"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">__init__&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+__init__ (
+        self,
+        comPort,
+        debug=False,
+        )
+</pre>
+
+<h4>Constructor.</h4>
+<p>        Arguments: a COM port object instance from LXSerial to talk through</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_largest_size"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_largest_size&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_largest_size ( self,  size )
+</pre>
+
+<p>Set the size of the largest object the FIND/BROWSE command will return to NNNN arc minutes
+        Returns:
+        0 - Invalid
+        1 - Valid</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="get_obj_info"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">get_obj_info&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+get_obj_info ( self )
+</pre>
+
+<p>Get Object Information
+        Returns: <string>")
+        Returns a string containing the current target object's name and object type.
+        LX200GPS & Autostar - performs no operation. Returns static description of Andromeda Galaxy.</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_library"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_library&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_library ( self,  libNum )
+</pre>
+
+<p>Select deep sky Library where D specifices
+        0 - Objects CNGC / NGC in Autostar & LX200GPS
+        1 - Objects IC
+        2 - UGC
+        3 - Caldwell (Autostar & LX200GPS)
+        4 - Arp (LX200 GPS)
+        5 - Abell (LX200 GPS)
+        Returns:
+        1 Catalog available
+        0 Catalog Not found
+        LX200GPS & AutoStar - Performs no function always returns "1"</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="get_target_RA"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">get_target_RA&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+get_target_RA ( self )
+</pre>
+
+<p>Get current/target object RA
+        Returns: HH:MM.T#
+         or HH:MM:SS
+        Depending upon which precision is set for the telescope</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="get_largest_limit"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">get_largest_limit&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+get_largest_limit ( self )
+</pre>
+
+<p>Get Smaller Size Limit
+        Returns: NNN'#
+        The size of the largest object returned by the FIND command expressed in arcminutes.</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_field_dia"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_field_dia&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_field_dia ( self,  mins )
+</pre>
+
+<p>Set FIELD/IDENTIFY field diamter to NNNN arc minutes.
+        Returns:
+        0 - Invalid
+        1 - Valid</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="getFindField"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">getFindField&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+getFindField ( self )
+</pre>
+
+<p>Get Find Field Diameter
+        Returns: NNN#
+        An ASCIi interger expressing the diameter of the field search used 
+        in the IDENTIFY/FIND commands.</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="get_min_quality"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">get_min_quality&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+get_min_quality ( self )
+</pre>
+
+<p>Get Minimum Quality For Find Operation
+        Returns:
+        SU# Super
+        EX# Excellent
+        VG# Very Good
+        GD# Good
+        FR# Fair
+        PR# Poor
+        VP# Very Poor
+        The mimum quality of object returned by the FIND command.</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="__repr__"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">__repr__&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+__repr__ ( self )
+</pre>
+
+<p>Return a representation string.</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="find_next_obj"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">find_next_obj&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+find_next_obj ( self )
+</pre>
+
+<p>Find next deep sky target object subject to the current constraints.
+        LX200GPS & AutoStar - Performs no function</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="get_smallest_limit"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">get_smallest_limit&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+get_smallest_limit ( self )
+</pre>
+
+<p>Get Larger Size Limit
+        Returns: NNN'#
+        The size of the smallest object to be returned by a search of the 
+        telescope using the BROWSE/FIND commands.</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="getMagBrightLimit"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">getMagBrightLimit&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+getMagBrightLimit ( self )
+</pre>
+
+<p>Get Browse Brighter Magnitude Limit
+        Returns: sMM.M#
+        The magnitude of the brightest object to be returned from the telescope FIND/BROWSE command.
+        Command when searching for objects in the Deep Sky database.</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_M_object"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_M_object&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_M_object ( self,  num )
+</pre>
+
+<p>Set current target object to Messier Object NNNN, an ASCII expressed decimal number.
+        Returns: Nothing.
+        LX200GPS and Autostar - Implemented in later versions.</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_star_catalog"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_star_catalog&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_star_catalog ( self,  num )
+</pre>
+
+<p>Select star catalog D, an ASCII integer where D specifies:
+        0 STAR library (Not supported on Autostar I & II)
+        1 SAO library
+        2 GCVS library        
+        3 Hipparcos (Autostar I & 2)
+        4 HR (Autostar I & 2)
+        5 HD (Autostar I & 2)
+        Returns:
+        1 Catalog Available
+        2 Catalog Not Found</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_star_object"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_star_object&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_star_object ( self,  num )
+</pre>
+
+<p>Select star NNNN as the current target object from the currently selected catalog
+        Returns: Nothing
+        LX200GPS & AutoStar - Available in later firmwares</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_prev"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_prev&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_prev ( self )
+</pre>
+
+<p>Find previous object and set it as the current target object.
+        Returns: Nothing
+        LX200GPS & Autostar - Performs no function<p> L - Object Library Commands</p>
+</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_smallest_size"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_smallest_size&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_smallest_size ( self,  size )
+</pre>
+
+<p>Set the size of the smallest object returned by FIND/BROWSE to NNNN arc minutes
+        Returns:
+        0 - Invalid
+        1 - Valid</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="getMagFaintLimit"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">getMagFaintLimit&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+getMagFaintLimit ( self )
+</pre>
+
+<p>Get Browse Faint Magnitude Limit
+        Returns: sMM.M")
+        The magnitude or the faintest object to be returned from the telescope 
+        FIND/BROWSE command.</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_min_obj"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_min_obj&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_min_obj ( self,  elev )
+</pre>
+
+<p>Set the minimum object elevation limit to DD")
+            Returns:
+        0 - Invalid
+        1 - Valid</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_obj_select"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_obj_select&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_obj_select ( self )
+</pre>
+
+<p>Sets the object selection string used by the FIND/BROWSE command.
+        Returns:
+        0 - Invalid
+        1 - Valid</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_bright_limit"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_bright_limit&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_bright_limit ( self,  lim )
+</pre>
+
+<p>Set Brighter limit to the ASCII decimal magnitude string. SMM.M
+        Returns:
+        0 - Valid
+        1 - invalid number<p> S - Telescope Set Commands</p>
+</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="step_quality"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">step_quality&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+step_quality ( self )
+</pre>
+
+<p>Step the quality of limit used in FIND/BROWSE through its cycle of 
+        VP ... SU. Current setting can be queried with :Gq#
+        Returns: Nothing</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="set_target_object"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">set_target_object&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+set_target_object ( self,  num )
+</pre>
+
+<p>Set current target object to deep sky catalog object number NNNN
+        Returns : Nothing
+        LX200GPS & Autostar - Implemented in later firmware revisions</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="sync_object"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">sync_object&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+sync_object ( self,  object=None )
+</pre>
+
+<p>Synchronizes the telescope's position with the currently selected database object's coordinates.
+        Returns:
+        LX200's - a "#" terminated string with the name of the object that was sync'd.
+        Autostars & LX200GPS - A static string: " M31 EX GAL MAG 3.5 SZ178.0'#"</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="find_obj"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">find_obj&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+find_obj ( self )
+</pre>
+
+<p>Find Object using the current Size, Type, Upper limit, lower limt 
+        and Quality contraints and set it as current target object.
+        Returns: Nothing
+        LX200GPS & Autostar - Performs no function</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="get_search_string"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">get_search_string&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+get_search_string ( self )
+</pre>
+
+<p>Get deepsky object search string
+        Returns: GPDCO#
+            A string indicaing the class of objects that should be returned by the FIND/BROWSE command. If the character
+        is upper case, the object class is return. If the character is lowercase, objects of this class are ignored. The
+        character meanings are as follws:
+        G - Galaxies
+        P - Planetary Nebulas
+        D - Diffuse Nebulas
+        C - Globular Clusters
+        O - Open Clusters</p>
+</td></tr>
+</table><table border="0" cellpadding="5" cellspacing="0" width="100%">
+
+        <tr>
+            <th bgcolor="#99ccff"
+                rowspan="2"
+                valign="top"
+                align="left"
+                width="20%"
+                >
+                <font color="#000000">
+                  <a name="get_object_Dec"></a>&nbsp;
+                </font>
+            </th>
+            <th bgcolor="#99ccff"
+                valign="top"
+                align="left"
+                width="80%"
+                >
+                <font color="#000000">get_object_Dec&nbsp;</font>
+            </th>
+        </tr>
+        <tr>
+        <td>
+        <pre>
+get_object_Dec ( self )
+</pre>
+
+<p>Get Currently Selected Object/Target Declination
+        Returns: sDD<em>MM#
+         or sDD</em>MM'SS#
+        Depending upon the current precision setting for the telescope.</p>
+</td></tr>
+</table></td></tr>
+</table>
+        </td>
+        </tr>
+        </table>
+
+    <hr>
+
+    <font size="-2"><i>This document was automatically generated
+    Sun Jul 02 11:19:21 2006 by <a
+    href="http://happydoc.sourceforge.net">HappyDoc</a> version
+    3.0.a1</i></font>
+        
+  </body>
+</html>
+        
