@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # Name:        Focuser.py
 # Purpose:     General access to and use of LX200 Focuser accessories
 #
@@ -9,18 +9,18 @@
 # RCS-ID:      $Id: Focuser.py $
 # Copyright:   (c) 2006
 # Licence:     LGPL
-# 
-#-----------------------------------------------------------------------------
+#
+# -----------------------------------------------------------------------------
 
 
 class Focuser:
     """LX200 class for Focuser movement and properties
-    
+
     """
-    
+
     def __init__(self, comPort, debug=False):
         """Constructor.
-        Arguments: 
+        Arguments:
         """
         self.comPort = comPort
 
@@ -29,24 +29,24 @@ class Focuser:
         """
         return "<LX200 Focuser instance>"
 
-    #-------------------------------------------------------------------------------        
+    # -------------------------------------------------------------------------------
     # F - Focuser Control
-    #-------------------------------------------------------------------------------
+    # -------------------------------------------------------------------------------
     def Move(Position):
         """Position (Long) Step distance
         Return (Nothing) Does not return a value.
         Remarks
-        If the Absolute property is True, then this is an absolute positioning 
-        focuser. The Move command tells the focuser to move to an exact step 
-        position, and the Position property is an integer between 0 and MaxStep. 
-        If the Absolute property is False, then this is a relative positioning 
+        If the Absolute property is True, then this is an absolute positioning
+        focuser. The Move command tells the focuser to move to an exact step
+        position, and the Position property is an integer between 0 and MaxStep.
+        If the Absolute property is False, then this is a relative positioning
         focuser. The Move command tells the focuser to move in a relative direction,
-        and the Position property is an integer between minus MaxIncrement and plus 
+        and the Position property is an integer between minus MaxIncrement and plus
         MaxIncrement. """
-        #add speed compensation...
-        if Position>0:
+        # add speed compensation...
+        if Position > 0:
             self.focus_in(speed=1, t=Position)
-        elif Position<0:
+        elif Position < 0:
             self.focus_out(speed=1, t=Position)
         return None
 
@@ -57,33 +57,47 @@ class Focuser:
         No dialog, just read config...
         """
         import configParser
-        ## start the Configparser module
-        self.config = ConfigParser.ConfigParser()  
+        # start the Configparser module
+        self.config = ConfigParser.ConfigParser()
         self.config.read(fileName)
 
     def focus_in(self, speed=1, t=0):
         """ Start Focuser moving inward (toward objective)
         Returns: None"""
         if speed:
-            if self.model!='LX200GPS': self.focus_speed(speed)
-            elif speed in [1,2]: self.focus_slow()
-            elif speed in [3,4]: self.focus_fast()
-            else: raise LX200Error("unsupported speed: "+speed+" for focusser")  
+            if self.model != 'LX200GPS':
+                self.focus_speed(speed)
+            elif speed in [1, 2]:
+                self.focus_slow()
+            elif speed in [3, 4]:
+                self.focus_fast()
+            else:
+                raise LX200Error(
+                    "unsupported speed: " +
+                    speed +
+                    " for focusser")
         self.comPort.CommandBlind("F+")
-        if t: 
+        if t:
             time.sleep(t)
             self.Halt()
 
-    def focus_out(self): 
+    def focus_out(self):
         """ Start Focuser moving outward (away from objective)
         Returns: None"""
         if speed:
-            if self.model!='LX200GPS': self.focus_speed(speed)
-            elif speed in [1,2]: self.focus_slow()
-            elif speed in [3,4]: self.focus_fast()
-            else: raise LX200Error("unsupported speed: "+speed+" for focusser")  
+            if self.model != 'LX200GPS':
+                self.focus_speed(speed)
+            elif speed in [1, 2]:
+                self.focus_slow()
+            elif speed in [3, 4]:
+                self.focus_fast()
+            else:
+                raise LX200Error(
+                    "unsupported speed: " +
+                    speed +
+                    " for focusser")
         self.comPort.CommandBlind("F-")
-        if t: 
+        if t:
             time.sleep(t)
             self.focus_stop()
 
@@ -92,22 +106,24 @@ class Focuser:
         Returns: Nothing"""
         self.comPort.CommandBlind("FQ")
         return None
-    
+
     def focus_fast(self):
         """ Set Focus speed to fastest setting
         Returns: Nothing"""
         self.comPort.CommandBlind("FF")
-    
-    def focus_slow(self): 
+
+    def focus_slow(self):
         """ Set Focus speed to slowest setting
         Returns: Nothing"""
         self.comPort.CommandBlind("FS")
-    
-    def focus_speed(self, speed): 
+
+    def focus_speed(self, speed):
         """ Autostar & LX200GPS - set focuser speed to <n> where <n> is an ASCII digit 1..4
         Returns: Nothing
         LX200 - Not Supported"""
-        if self.model!='LX200GPS':
-            raise LX200Error("unsupported model: "+self.model+" for Optical Tube Assembly Temperature")  
+        if self.model != 'LX200GPS':
+            raise LX200Error(
+                "unsupported model: " +
+                self.model +
+                " for Optical Tube Assembly Temperature")
         self.comPort.CommandBlind("F", speed)
-
