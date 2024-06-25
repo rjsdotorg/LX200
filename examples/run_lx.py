@@ -5,7 +5,7 @@
 #
 # Author(s):   R J Schumacher
 #
-# Created:     2007/11/11
+# Created:     2007/11/11 - 2024
 # Copyright:   none
 # Licence:     LGPL
 #
